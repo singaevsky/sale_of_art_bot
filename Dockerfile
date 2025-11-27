@@ -12,4 +12,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . /app/
 
 # Инициализация БД при старте контейнера
-CMD ["python", "-c", "import asyncio; from main import init_db; asyncio.run(init_db())"] && python main.py
+CMD ["python", "main.py"]
+
